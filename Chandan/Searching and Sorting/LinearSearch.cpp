@@ -8,8 +8,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-template <typename T>
-int linearSearch(vector <T> &v, T value){
+// int linearSearch(vector <int> &v, int value){
+template <typename T> int linearSearch(vector <T> &v, T value){
 	for(int i=0; i<v.size(); i++){
 		if(value == v[i])
 			return i;
