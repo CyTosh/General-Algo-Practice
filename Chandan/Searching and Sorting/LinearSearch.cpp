@@ -1,4 +1,5 @@
 // Simple program to implement Linear search over a vector
+// O(n)
 
 // Returns -1 if value not found
 // else return first index of the value found
