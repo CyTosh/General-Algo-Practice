@@ -36,13 +36,13 @@ int JumpSearch(vector <T> &v, T value){
 	int prev = 0;
 	int current = 0;
 
-	if(value < v[0])	// if value is even lesser than first value
+	if(value < v[0])		// if value is even lesser than first value
 		return -1;		// we can't find that value
 
 	// reaching to the block
 	while(v[current] < value){
 
-		current += increment;	// 	move to next block
+		current += increment;		// 	move to next block
 
 		if(current > n)			//	avoid array out of bound
 			current = n;
@@ -54,11 +54,11 @@ int JumpSearch(vector <T> &v, T value){
 	}
 
 	// now prev has the value of the index of block on which we have
-	// to make linearSearch
+	// to make linearSearch (we can make binary search also in this block)
 
 	int start = prev;					// starting index of block
-	int end = start + increment - 1;	// ending index of block
-	if(end > n) end = n;				// avoid array out of bound
+	int end = start + increment - 1;			// ending index of block
+	if(end > n) end = n;					// avoid array out of bound
 
 	for(int index = start; index <= end; index++){		// make linear search
 		if(v[index] == value)
