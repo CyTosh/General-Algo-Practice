@@ -18,7 +18,7 @@ class ExponentialSearch
            i=i*2;
 
            // Call binary search for found range.
-           return binarySearch(arr,i/2,min(i,n),x);
+           return binarySearch(arr,i/2,Math.min(i,n),x);
 
 	}
 	// A recursive binary search function.It returns
