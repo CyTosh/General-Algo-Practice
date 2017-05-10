@@ -2,10 +2,9 @@
 // sorted array using exponential search.
 class ExponentialSearch
 {
-	int binarySearch(int arr[],int ,int ,int);
 
-	// Returns position of first occurenc of
-	// x in array
+
+	
 	int exponentialSearch(int arr[],int n,int x)	
 	{
 	   // If x is present at first location itself
