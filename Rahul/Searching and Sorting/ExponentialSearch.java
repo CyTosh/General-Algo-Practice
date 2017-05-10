@@ -2,7 +2,7 @@
 // sorted array using exponential search.
 class ExponentialSearch
 {
-  //int binarySearch(int arr[],int l,int r,int x);
+  int binarySearch(int arr[],int ,int ,int);
 
   // Returns position of first occurenc of
   // x in array
@@ -19,7 +19,7 @@ class ExponentialSearch
            i=i*2;
 
            // Call binary search for found range.
-           return binarySearch(arr,i/2,Math.min(i,n),x);
+           return binarySearch(arr,i/2,min(i,n),x);
 
   }
   // A recursive binary search function.It returns
@@ -39,7 +39,7 @@ class ExponentialSearch
          // If element is smaller than mid,then it
          // can only be present n left subarray
          if(arr[mid]>x)
-           return binarySearch(arr,l,mid-1,x);
+           return binarySearch(arr,l,md-1,x);
 
            //Else the element can only be present
            // in right subarray
@@ -57,10 +57,10 @@ class ExponentialSearch
      int arr[]={2,3,4,40,55,5444,66565};
      int n=arr.length;
      int x=40;
-     ExponentialSearch ob = new ExponentialSearch();
-     int result = ob.exponentialSearch(arr,n,x);
+     int result = exponentialSearch(arr,n,x);
      if(result==-1)
      System.out.println("element is not present in array");
      System.out.printf("element is present at index %d",result);
+     return 0;
   }
 }
